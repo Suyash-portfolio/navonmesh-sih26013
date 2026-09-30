@@ -1,0 +1,1 @@
+﻿"""NAVONMESH GeoAI Core"""
