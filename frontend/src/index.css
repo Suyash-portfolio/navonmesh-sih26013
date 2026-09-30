@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* NAVONMESH geospatial / government-technology palette */
+    --brand-deep: #0b1f1a;
+    --brand-forest: #12352d;
+    --brand-teal: #0f766e;
+    --brand-teal-light: #14b8a6;
+    --brand-accent: #34d399;
+    --brand-text: #f1f5f3;
+    --brand-muted: #94a3a8;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0b1f1a;
+    color: #f1f5f3;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom GIS Glassmorphism Panels */
+.gis-glass {
+  background: rgba(11, 31, 26, 0.86);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.gis-glass-card {
+  background: rgba(15, 42, 36, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.45);
+}
+
+.gis-glass-card:hover {
+  border-color: rgba(45, 212, 191, 0.4);
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.65);
+}
+
+/* Split-screen swipe handle */
+.swipe-divider {
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.5), 0 0 30px rgba(52, 211, 153, 0.28);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 31, 26, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 85, 74, 0.8);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(71, 122, 106, 0.9);
+}
+
+/* Custom range slider thumb */
+input[type="range"] {
+  accent-color: #14b8a6;
+}
+
+/* Tooltip animation */
+.tooltip {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
